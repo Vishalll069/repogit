@@ -1,0 +1,42 @@
+input.Search{
+    border: 2px solid rgb(179, 132, 132);
+    text-align: center;
+    align-content: center;
+    margin: 0 auto; 
+    border-radius: 10px;
+  }
+
+.search-bar{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+
+}
+
+button.btn{
+    align-items: center;
+    border: 1px  salmon ;
+    border-radius: 2px;
+    margin-left: 4px;
+}
+
+.Results{
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    
+}
+.card{
+    border: 1px solid black;
+    color: rgb(14, 146, 187);
+    border-radius: 5px;
+}
