@@ -4,23 +4,22 @@ import "../App.css";
 
 const Results = (props) =>{
     const { repos } = props;
-    console.log('Repos is :' , repos);
+    // console.log('Repos is :' , repos.data);
 
     const listRepos = 
         repos.length !==0 ? (
-            repos.data.slice(0, 10).map((item) => (
+            repos.data.map((item) => (
             <div className="card" key={item.id}>
-                <div className="username">{item.searchInput}</div>
-                 <a href={item.html_url}>{item.name}</a>
-                 <div className="description">{item.description}</div>
-                 <div className="language">{item.language}</div>
+                 <a href={item.html_url}><h4>{item.name}</h4></a>
+                 <div className="description"><p>{item.description}</p></div>
+                 <div >{item.topics.map(topic=>(<div key={topic} className="language">{topic}</div>))}</div>
             </div>
             ))
         ) : (
-            <li>search for the Repos you Want</li>
+            <h5 style={{fontSize:25, gridColumn:1/-1}}>:: search for the Repos you Want ::</h5>
         );
-        console.log(listRepos);
-    // const repoName = 
+        
+        // console.log(listRepos);
     
     return(
         <>

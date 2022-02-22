@@ -1,6 +1,7 @@
+import React from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar'
-// import {Form} from "semantic-ui-react"
+// import ReactPaginate from 'react-paginate';
 
 function App() {
   return (
@@ -9,7 +10,6 @@ function App() {
       <div className="navbar"><h2>Repo Search</h2></div>                 
     </div>
     <SearchBar/>
-
     </>
   );
 }
